@@ -34,5 +34,6 @@
 	
 	
 	<dubbo:service interface="org.testClient.DemoService" ref="demoServiceImpl" protocol="dubbo" />
+	<dubbo:service interface="org.testClient.TestService" ref="testServiceImpl" protocol="dubbo" />
 	
 </beans>
