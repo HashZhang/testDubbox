@@ -1,11 +1,13 @@
 package org.testClient;
 
+import java.io.Serializable;
+
 /**
  * @author wujiang
  * @version 1.0.0.
  * @date 2016/8/31
  */
-public class Camera {
+public class Camera implements Serializable {
     private String brand;
     private String model;
     private double price;
