@@ -2,6 +2,8 @@ package org.testCall;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.testClient.Camera;
+import org.testClient.CameraService;
 import org.testClient.DemoObject;
 import org.testClient.DemoService;
 
@@ -15,5 +17,8 @@ public class App {
 				"classpath:META-INF/spring/spring-sfpp-web-dubbo.xml");
 		DemoService demoService = act.getBean(DemoService.class);
 		System.out.println(demoService.printMessage(new DemoObject().setMessage("asd").setName("asd").setSalary(0.0)));
+
+		CameraService cameraService = act.getBean(CameraService.class);
+		System.out.println(cameraService.printMessage(new Camera().setBrand("NIKON").setModel("D7200").setPrice(8000.00)));
 	}
 }
