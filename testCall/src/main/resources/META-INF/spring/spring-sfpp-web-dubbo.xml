@@ -13,4 +13,6 @@
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
 	">	
     <dubbo:reference id="demoService" interface="org.testClient.DemoService" check="false"/>
+	<dubbo:reference id="cameraService" interface="org.testClient.CameraService" check="false"/>
+
 </beans>
